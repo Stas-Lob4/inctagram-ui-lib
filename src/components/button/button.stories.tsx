@@ -1,12 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import {Button} from "@/components/button/button";
-
-
+import type {Meta, StoryObj} from '@storybook/react';
+import {Button} from "@/components";
 
 const meta: Meta<typeof Button> = {
   argTypes: {
     variant: {
-      control: { type: 'radio' },
+      control: {type: 'radio'},
       options: ['primary', 'secondary', 'tertiary', 'text'],
     },
   },
