@@ -1,7 +1,7 @@
 {
-  "name": "@wild-animals/ui-kit",
+  "name": "@stas-lob4/ui-kit",
   "private": false,
-  "version": "1.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -10,15 +10,6 @@
     "dist",
     "dist/style.css"
   ],
-  "exports": {
-    ".": "./dist/index.js",
-    "./dist/style.css": "./dist/style.css",
-    "./components": {
-      "types": "./dist/components/index.d.ts",
-      "default": "./dist/index3.js"
-    },
-    "./types": "./dist/types/index.d.ts"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc -b",
