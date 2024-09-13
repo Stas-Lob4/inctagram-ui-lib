@@ -9,11 +9,11 @@
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": false,
+    "resolveJsonModule": true,
     "isolatedModules": true,
     "outDir": "./dist",
     "emitDeclarationOnly": true,
     "declaration": true,
-    "moduleDetection": "force",
     "jsx": "react-jsx",
 
     /* Linting */
@@ -27,5 +27,8 @@
     }
   },
   "include": ["src"],
-  "references": [{"path":  "./tsconfig.node.json"}]
+  "exclude": [
+    "./src/**/*.stories.tsx",
+    "./src/**/*.stories.ts",
+  ]
 }
